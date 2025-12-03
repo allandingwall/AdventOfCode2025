@@ -32,42 +32,7 @@ def part_two(input_file):
         else:
             movement = dist
 
-        start = dial
-        end = (dial + movement) % 100
-
-        # Count zero hits during the rotation (excluding final landing)
-        # For right turns: positions are start+1, start+2, ..., start+movement
-        # For left turns: positions are start-1, start-2, ..., start-dist
-        if movement > 0:
-            # R rotation: hits when (start + k) % 100 == 0
-            # Solve k ≡ -start mod 100 => k = (100 - start)
-            first_k = (100 - start) % 100
-            if first_k == 0:
-                first_k = 100  # implies exactly at 100th click
-
-            if first_k <= movement:
-                # Number of occurrences: one every 100 clicks
-                ctr += 1 + (movement - first_k) // 100
-
-        elif movement < 0:
-            # L rotation: movement negative
-            # hits when (start - k) % 100 == 0
-            # Solve k ≡ start mod 100 => k = start
-            first_k = start % 100
-
-            if first_k == 0:
-                first_k = 100  # exactly at 100th click
-
-            kmax = -movement  # total number of clicks
-
-            if first_k <= kmax:
-                ctr += 1 + (kmax - first_k) // 100
-
-        # Count the final landing click if it is zero
-        if end == 0:
-            ctr += 1
-
-        dial = end
+        dial += movement
 
     return ctr
 
