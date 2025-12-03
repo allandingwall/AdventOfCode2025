@@ -1,5 +1,5 @@
 import re
-import textwrap
+import time
 
 
 def get_numbers(str):
@@ -14,21 +14,17 @@ def part_one(lst):
         if len(str(i)) % 2 == 0:
             if str(i)[: len(str(i)) // 2] == str(i)[len(str(i)) // 2 :]:
                 solution += i
-        else:
-            continue
     return solution
 
 
 def part_two(lst):
     solution = 0
-
     for i in range(lst[0], lst[1] + 1):
-        i = str(i)
-        for j in range(1, (len(i) // 2) + 1):
-            check = set(textwrap.wrap(i, j))
-            if len(check) == 1:
-                solution += int(i)
-                break
+        for j in range(1, (len(str(i)) // 2) + 1):
+            if len(str(i)) % j == 0:
+                if (str(i)[:j]) * (len(str(i)) // j) == str(i):
+                    solution += i
+                    break
     return solution
 
 
