@@ -1,5 +1,4 @@
 import re
-import time
 
 
 def get_numbers(str):
