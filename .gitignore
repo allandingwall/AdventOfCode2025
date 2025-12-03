@@ -219,3 +219,6 @@ __marimo__/
 *.cfg
 /bin/
 /include/
+
+# Advent of Code inputs
+*input.txt
