@@ -1,4 +1,4 @@
-# Advent of Code 2025 – Python Solutions
+# Advent of Code 2025 – Python
 
 This repository contains my solutions to **Advent of Code 2025**, implemented in **Python**.
 
@@ -21,16 +21,9 @@ From the repository root, navigate into the desired day’s folder and run:
     cd Day1
     python3 main.py
 
-Repeat with `Day2`, `Day3`, and so on.
-
-## Goals
-
-- Practise algorithmic problem-solving.
-- Strengthen Python skills.
-- Maintain clear, readable, and well-structured solutions.
 
 ## Advent of Code
 
-You can find the event and problem statements at:
+You can find the event and challenges at:
 
 https://adventofcode.com/2025
