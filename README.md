@@ -22,8 +22,6 @@ From the repository root, navigate into the desired day’s folder and run:
     python3 main.py
     
 ## Progress
-## Completion Progress
-
 | Day | Part 1 | Part 2 |
 |-----|--------|--------|
 | 01  | ✔      | ✘      |
@@ -38,7 +36,6 @@ From the repository root, navigate into the desired day’s folder and run:
 | 10  | -      | -      |
 | 11  | -      | -      |
 | 12  | -      | -      |
-
 
 
 ## Advent of Code
