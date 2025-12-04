@@ -4,13 +4,13 @@ def part_one(input_file):
 
     for line in input_file:
         line = line.strip()
-        letter = line[0]
-        number = int(line[1:])
+        direction = line[0]
+        dist = int(line[1:])
 
-        if letter == "L":
-            number *= -1
+        if direction == "L":
+            dist *= -1
 
-        dial = (dial + number) % 100
+        dial = (dial + dist) % 100
 
         if dial == 0:
             ctr += 1
@@ -27,31 +27,14 @@ def part_two(input_file):
         direction = line[0]
         dist = int(line[1:])
 
-        if direction == "L":
-            movement = -dist
-        else:
-            movement = dist
+        step = 1 if direction == "R" else -1
 
-        if movement > 0:
-            i = 0
-            while i < movement:
-                dial += 1
-                i += 1
+        for _ in range(dist):
+            dial += step
+            dial %= 100
 
-                dial = dial % 100
-                if dial == 0:
-                    ctr += 1
-
-        elif movement < 0:
-            i = 0
-            while i > movement:
-                dial -= 1
-                i -= 1
-
-                dial = dial % 100
-
-                if dial == 0:
-                    ctr += 1
+            if dial == 0:
+                ctr += 1
 
     return ctr
 
