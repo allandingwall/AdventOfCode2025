@@ -24,7 +24,7 @@ From the repository root, navigate into the desired day’s folder and run:
 ## Progress
 | Day | Part 1 | Part 2 |
 |-----|--------|--------|
-| 01  | ✔      | ✘      |
+| 01  | ✔      | ✔      |
 | 02  | ✔      | ✔      |
 | 03  | ✔      | ✔      |
 | 04  | ✔      | ✔      |
