@@ -29,7 +29,7 @@ From the repository root, navigate into the desired day’s folder and run:
 | 03  | ✔      | ✔      |
 | 04  | ✔      | ✔      |
 | 05  | ✔      | ✔      |
-| 06  | -      | -      |
+| 06  | ✔      | -      |
 | 07  | -      | -      |
 | 08  | -      | -      |
 | 09  | -      | -      |
