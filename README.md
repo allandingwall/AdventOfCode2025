@@ -29,8 +29,8 @@ From the repository root, navigate into the desired day’s folder and run:
 | 03  | ✔      | ✔      |
 | 04  | ✔      | ✔      |
 | 05  | ✔      | ✔      |
-| 06  | ✔      | -      |
-| 07  | -      | -      |
+| 06  | ✔      | X      |
+| 07  | ✔      | -      |
 | 08  | -      | -      |
 | 09  | -      | -      |
 | 10  | -      | -      |
